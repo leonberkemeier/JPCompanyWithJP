@@ -2,6 +2,7 @@
 :root {
     --height-navbar: 6vh;
     --white: #ffffff;
+    --bg-color: rgb(52, 52, 53);
   }
 
 *{
@@ -12,7 +13,7 @@
 
 body{
     text-align: center;
-    background-color: rgb(52, 52, 53);
+    background-color: var(--bg-color);
     color: #fff;
 }
 
@@ -31,11 +32,7 @@ body{
 .navbar h2{
     font-size: 10px;
 }
-.navbar{
-    background-color: rgb(0, 0, 0,.1);
-    /* width: 80%;
-    margin-left: 10%; */
-}
+
 .navbar-info span{
     background: blue;
     border-radius: 5px;
@@ -43,18 +40,30 @@ body{
 .navbar-info a{
     text-decoration: none;
 }
+
 .navbar-main .brand-name{
-    background-color: orange;
+    margin-left: 60px;
     color: white;
     padding: 5px;
     border-radius: 5px;
 }
+
 .navbar-main .brand-name:hover{
-    background-color: white;
+    cursor: pointer;
     color: orange;
-    transition: .8s;
-       
-} 
+    transition: 1s;
+}
+
+.navbar-main img{
+    position: absolute;
+    top: calc(-1/4 * var(--height-navbar));
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.navbar-main img:hover{
+    cursor: pointer;
+}
 .navbar-utils{
     display: flex;
     flex-direction: row;
@@ -76,19 +85,33 @@ body{
     color: orange;
 
 }
+.navbar-sm ion-icon{
+    margin-left: 5px;
+}
+.navbar-sm a{
+    color: white;
+}
+.navbar-sm a:hover{
+    color: orange;
+}
 /* .navbar-main:hover{
     background-color: rgb(0,0,0);
     transition: 1000ms;
 } */
 .brand-name{
+    display: flex;
+    justify-content: space-between;
     color: orange;
     text-decoration: none;
     margin-left: 20px;
 }
-
+.brand-name h1{
+    font-size: 15px;
+}
 .brand-name:hover{
     color: white;
     text-decoration: none;
+    transition: .5s;
 }
 
 .nav-item:hover{
@@ -108,9 +131,71 @@ body{
     color: orangered;
 }
 
+
+.ScrollUp1{
+    top:-100px;
+    transition: .5s;
+}
+
+.ScrollDown1{
+    top: 0px;
+    transition: 1s;
+}
+.ScrollUp2{
+    top:-100px;
+    transition: 1s;
+    animation-delay: 200ms;
+}
+
+.ScrollDown2{
+    top: var(--height-navbar);
+    transition: 1s;
+    animation-delay: 200ms;
+}
+
 section{
     min-height: 100vh;
 }
 .section-first{
     margin-top: calc(2*var(--height-navbar));
+    
+    background-color: var(--bg-color);
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    
+    
 }
+.section-first .banner{
+    
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    background: url('StockPic.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(90%);
+    display: flex;
+    
+}
+/* .background-image{
+    
+    background-image:url(StockPic.jpg);
+    position: absolute;
+    width: 100vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(50%,-50%);
+    
+} */
+.section-second{
+    
+    background-color: var(--bg-color);
+}
+.section-third{
+    background-color: var(--bg-color);
+}
+
