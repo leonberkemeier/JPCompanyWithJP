@@ -7,9 +7,11 @@
     --orange-color: rgb(255, 165, 0);
     --circle-color-outer: rgb(255, 189, 65);
     --circle-color-inner: rgb(219, 99, 55);
+    --dark-color: #1B1B1B;
     /* --circle-color-inner: #b0e633;
     --circle-color-outer: #53ef7d; */
     --dark-orange-color: orangered;
+    --modal-color:rgb(64,64,64);
   }
 
 *{
@@ -366,13 +368,13 @@ font-size: 15px;
 
 .section-second .section-second-columns .col1 h1{
     font-size: 30px;
-    color: #1B1B1B;
+    color: var(--dark-color);
     
     
 }
 .section-second .section-second-columns .col1 h3{
     font-size: 18px;
-    color: #1B1B1B;
+    color: var(--dark-color);
     text-align: justify;
     text-justify: inter-word;
 }
@@ -402,3 +404,282 @@ font-size: 15px;
     background-color: var(--bg-color);
 }
 
+.section-third .sectionTitle{
+    color: var(--dark-color);
+}
+
+.pricing-Options{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.pricing-Options .options{
+    margin: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.pricing-Options .options:hover{
+    transform: translateY(-20px);
+    transition: .7s;
+    cursor: pointer;
+    --lightness: 80%;
+    background: #ffffff80;
+    color: #000;
+    outline: 1px solid rgb(255, 255, 255);
+    box-shadow: inset 0 0 20px whitesmoke, inset 20px 0 20px var(--orange-color),
+      inset -10px 0 20px var(--orange-color), inset 20px 0 300px var(--orange-color), inset -10px 0 300px #0ff,
+      0 0 50px #fff, -10px 0 20px var(--orange-color), 10px 0 20px var(--orange-color);
+    transition: all ease-in-out 0.3s;
+}
+.pack-container {
+    position: relative;
+    display: flex;
+    max-width: 350px;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: var(--modal-color);
+    border: 1px solid #fff;
+    padding: 1.6rem;
+    color: #fff;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+  
+  .header {
+    position: relative;
+    margin: 0;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border-radius: 0;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .title {
+    display: block;
+    font-family: sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    color: #fff
+  }
+  
+  .price-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    font-family: sans-serif;
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+  .pricy{
+    color:var(--orange-color);
+  }
+  
+  
+  .price-container span:first-child {
+    margin-top: 10px;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  
+  .price-container span:last-child {
+    align-self: flex-end;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  
+  .lists {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .list span {
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    background-color: rgba(255, 255, 255, 0.185);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .list span svg {
+    height: 12px;
+    width: 12px;
+  }
+  
+  .list p {
+    display: block;
+    font-family: sans-serif;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  .button-container button {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #000;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+  }
+  .button-container button:hover {
+    background-color: var(--orange-color);
+    cursor: pointer;
+  }
+
+  .section-fourth .columns, .section-fourth .columns1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+  }
+
+  .section-fourth .columns .col0,   .section-fourth .columns .col1
+  , .section-fourth .columns1 .col0, .section-fourth .columns1 .col1{
+    width: 50%;
+    background-color: var(--modal-color);
+    color: rgb(235, 221, 221);
+  }
+
+  .section-fourth .columns .col0{
+    background: url('Teamwork.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .section-fourth .columns .col1{
+    
+    color: rgb(235, 221, 221);
+  }
+
+
+  .section-fourth .columns .col1 h1{
+    margin: 20px;
+    margin-bottom: 40px;
+    margin-top: 80px;
+  }
+  .section-fourth .columns .col1 h3{
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 70%;
+    margin-left: 15%;
+    font-size: 25px;
+  }
+
+  .section-fourth .columns1 .col1{
+    background-color: white;
+  }
+  .section-fourth .columns1 .col0{
+    background-color: rgb(255, 218, 185);
+    color: var(--modal-color);
+    
+  }
+
+  .section-fourth .columns1 .col0 h1{
+    margin: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .section-fourth .columns1 .col0 h3{
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 70%;
+    margin-left: 15%;
+    font-size: 25px;
+  }
+
+
+
+
+  .profile-card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  
+  
+  .profile-card {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .profile-card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  .section-fourth .columns1 .col1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+  }
+
+  .section-fourth .columns1 .col1 .profile-card{
+    top: 25%;
+    margin: 20px;
+  }
