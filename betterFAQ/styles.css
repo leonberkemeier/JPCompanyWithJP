@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.faq{
+    max-width: 700px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+}
+
+.question h2{
+    font-size: 20px;
+    
+}
+.answer{
+    background-color: #646464;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-in;
+    transition: max-height .5s ease-out
+}
+.faq.active .answer{
+    max-height: 300px;
+}
