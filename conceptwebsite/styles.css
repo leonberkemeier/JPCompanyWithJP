@@ -1,0 +1,42 @@
+body{
+    background-color: grey;
+}
+
+.block-container{
+    display: flex;
+
+}
+.website-block{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: 400px;
+    margin: 50px;
+    background-color: green;
+    border-radius: 5px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.website-block h2{
+    margin-top: 50px;
+    font-size: 50px;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.website-circle{
+    position: absolute;
+    z-index: 100;
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 50px;
+    margin-left: 0px;
+    margin-top: 200px;
+    border-radius: 50%;
+    border: 1px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}

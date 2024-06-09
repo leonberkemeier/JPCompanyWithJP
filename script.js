@@ -23,7 +23,7 @@ var currentScrollPos = window.pageYOffset;
 
 
 var typingEffect = new Typed (".multiText",{
-    strings:["Software","Help","Support","Kingz"],
+    strings:["Goal","Guide","Future"],
     loop: true,
     typeSpeed: 200,
     backSpeed: 300,
@@ -69,3 +69,15 @@ function rotateElement(event, element){
     element.style.setProperty("--rotateX", -1 * ratioOSY + "deg");
 }
 // alert("hi")
+
+const p1 = document.getElementById("pillar1");
+const p2 = document.getElementById("pillar2");
+const p3 = document.getElementById("pillar3");
+debugger
+const b1 = document.getElementById("bulllet1");
+
+p1.addEventListener("click", () =>{
+  p1.classList.toggle("active");
+  
+  b1.classList.add(".show-bullet")
+})
