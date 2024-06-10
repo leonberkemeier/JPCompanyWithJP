@@ -73,11 +73,34 @@ function rotateElement(event, element){
 const p1 = document.getElementById("pillar1");
 const p2 = document.getElementById("pillar2");
 const p3 = document.getElementById("pillar3");
-debugger
-const b1 = document.getElementById("bulllet1");
+
+const b1 = document.getElementById("bullet1");
+const b2 = document.getElementById("bullet2");
+const b3 = document.getElementById("bullet3");
 
 p1.addEventListener("click", () =>{
-  p1.classList.toggle("active");
+  b1.classList.toggle("show-bullet");
+  b2.classList.remove("show-bullet");
+  b3.classList.remove("show-bullet");
+});
+
+p2.addEventListener("click", () =>{
+  b1.classList.remove("show-bullet");
+  b2.classList.toggle("show-bullet");
+  b3.classList.remove("show-bullet");
+});
+
+p3.addEventListener("click", () =>{
+  b1.classList.remove("show-bullet");
+  b2.classList.remove("show-bullet");
+  b3.classList.toggle("show-bullet");
+});
+
+const q1 = document.getElementById("qh1");
+const qb1 = document.getElementById("qb1");
+
+q1.addEventListener("click", () =>{
+  qb1.classList.toggle("show-question");
   
-  b1.classList.add(".show-bullet")
-})
+});
+
