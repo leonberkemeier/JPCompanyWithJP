@@ -425,11 +425,14 @@ margin-left: 5%;
 }
 .section-second{
   height: 105vh;
+  display: right ;
+  justify-content: center;
+  flex-direction: column;
 }
 .section-second .banner{
   z-index: -1;
-    
-  height: 110vh;
+  margin-left: 5vw;
+  height: 100vh;
   width: 90vw;
   
   position: absolute;
@@ -639,7 +642,6 @@ margin-left: 5%;
 }
 .show-bullet{
   width: 200px;
-  
   transition: 1s;
   background: rgba(0,0,0,.1);
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
@@ -839,10 +841,10 @@ margin-left: 5%;
     width: 80%;
     text-align: left;
     border: 1px solid white;
-    max-height: 0px;
+    
     cursor: pointer;
     overflow: hidden;
-    transition: 1s;
+    
   }
   .section-sixth .question-body h1{
     font-size: 20px;
@@ -851,7 +853,9 @@ margin-left: 5%;
     color: black;
   }
  
-
+    .qb1{
+      height: 100px;
+    }
 
 
 
