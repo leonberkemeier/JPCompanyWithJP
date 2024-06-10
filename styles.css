@@ -859,6 +859,82 @@ margin-left: 5%;
 
 
 
+
+
+
+
+
+
+/*=======================  */
+.section-fifth{
+  background-color: #747474;
+  height: 90vh;
+  
+  clip-path: polygon(3% 5%, 97% 8%, 96% 95%, 50% 98%,2% 95%);
+
+  }
+.section-fifth .fifth-container{
+  height:max-content;
+  width: 80%;
+  height: auto;    
+  margin-left: 10%;
+  position: absolute;
+  margin-top: 80px;
+}
+
+.section-fifth .fifth-container .faq-block .faq-item{
+ margin: 20px;
+ height: auto;
+}
+
+.faq-item .collapsible{
+  border: 1px solid black;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--coursenskills-color);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+  font-family: "Monospace", monospace;
+  
+    
+}
+.faq-item .active{
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-bottom: 0;
+}
+.collapsible .faq-question-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+  color: white;
+}
+.faq-item .faq-content{
+  
+  display: none;
+  overflow: hidden;    
+  border-bottom-right-radius: 10px ;
+  border-bottom-left-radius: 10px ;
+  padding: 20px;
+  border: 1px solid black;
+  color: white;
+}
+.faq-item .faq-content h3{
+  font-size: 20px;
+  color: white;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
       /* ====== css for footer ======== */
 
 footer{
