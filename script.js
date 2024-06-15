@@ -96,12 +96,13 @@ p3.addEventListener("click", () =>{
   b3.classList.toggle("show-bullet");
 });
 
-const q1 = document.getElementById("qh1");
-const qb1 = document.getElementById("qb1");
+
+const q1 = document.getElementById("question1");
+
+const a1 = document.getElementById("answer1");
 
 q1.addEventListener("click", () =>{
-  qb1.classList.toggle("show-question");
-  
+  a1.classList.toggle("show-answer");
 });
 
 

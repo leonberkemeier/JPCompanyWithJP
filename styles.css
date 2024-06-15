@@ -205,16 +205,16 @@ body{
     animation-delay: 200ms;
 }
 
-section{
+/* section{
     min-height: 100vh;
-}
+} */
 .section-first{  
     background-color: var(--bg-color);
     border-bottom: 1px solid black;
     display: flex;
     justify-content: center;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 89% 95%,0 100%);
-    
+    height: 100vh;
 }
 .section-first .banner{
     
@@ -463,12 +463,12 @@ margin-left: 5%;
 }
 .section-second .section-second-columns h1{
   position: absolute;
-  margin: 10px;
+  margin: 30px;
   margin-bottom: 100px;
   z-index: 10;
 }
 .section-second .section-second-columns .col0{
-    margin-top: 60px;
+    margin-top: 80px;
     margin-right: 4%;
     width: 30%;
 }
@@ -484,7 +484,7 @@ margin-left: 5%;
 
 
 .section-second .section-second-columns .col1{
-    margin-top: 50px;
+    margin-top: 70px;
     width: 60%;
 }
 
@@ -533,14 +533,14 @@ margin-left: 5%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px; 
+  padding: 10px; 
 }
 
 .section-third .banner{
   
   z-index: -1;
     
-  height: 105vh;
+  height: 115vh;
   width: 90vw;
   
   position: absolute;
@@ -567,7 +567,7 @@ margin-left: 5%;
   align-items: center;
   
   width: 80%;
-  height: 100vh;
+  
 }
 
 .section-third .section-third-container .third-triangle{
@@ -664,12 +664,19 @@ margin-left: 5%;
   margin-bottom: 100px;
 }
 
+.section-fourth{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  height: 100vh;
+}
 
   .section-fourth .columns, .section-fourth .columns1{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
     height: 80vh;
   }
 
@@ -681,7 +688,7 @@ margin-left: 5%;
   }
 
   .section-fourth .columns .col0{
-    background: url('Teamwork.jpg');
+    background: url('labstuff.jpg');
     background-size: cover;
     background-position: center;
   }
@@ -814,62 +821,46 @@ margin-left: 5%;
     clip-path: polygon(3% 5%, 97% 8%, 96% 95%, 50% 98%,2% 95%);
   
     }
+
   .section-sixth .sixth-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     height: 100%;
   }
-  .section-sixth .question-head{
+  .section-sixth .sixth-container .questions{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 80%;
-    color: black;
-    border: 1px solid white;
-    cursor: pointer;
-    padding: 10px;
+    margin: 0px;
+    margin-top: 200px;
+    height: 100%;
   }
 
-  .section-sixth .question-head h1{
-    font-size: 20px;
-    margin-left: 10px;
-    
-  }
-  .section-sixth .question-body{
+  .section-sixth .sixth-container .questions .question{
+    margin-top: 60px;
     width: 80%;
-    text-align: left;
-    border: 1px solid white;
-    
-    cursor: pointer;
+    background-color: green;
+  }
+
+  
+
+  .section-sixth .sixth-container .questions .answer{
+    margin: 20px;
+    margin-top: 0px;
+    width: 80%;
+    background-color: orange;
+    height: 0px;
     overflow: hidden;
-    
   }
-  .section-sixth .question-body h1{
-    font-size: 20px;
-    margin-left: 20px;
-    text-align: left;
-    color: black;
+
+  .show-answer{
+    height: 200px;
   }
- 
-    .qb1{
-      height: 100px;
-    }
-
-
-
-
-
-
-
-
 
 /*=======================  */
 .section-fifth{
-  background-color: #747474;
-  height: 90vh;
-  
+  /* background-color: #747474; */
+  background-color: rgb(195, 142, 95);
+  height: 700px;
   clip-path: polygon(3% 5%, 97% 8%, 96% 95%, 50% 98%,2% 95%);
 
   }
