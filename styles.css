@@ -221,7 +221,7 @@ body{
     height: 100%;
     width: 100vw;
     position: absolute;
-    background: url('hand-drawn-science-formulas-chalkboard-background.jpg');
+    background: url('newbggreen.jpg');
     background-size: cover;
     background-position: center;
     filter: brightness(60%);
@@ -758,7 +758,12 @@ margin-left: 5%;
     box-shadow: 0 0 0 5px #ffffff80;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
-  
+  .profile-card .personal-img img{
+    height: 100%;
+  }
+  .profile-card .personal-img{
+    height: 100%;
+  }
   
   
   .profile-card {
@@ -791,6 +796,9 @@ margin-left: 5%;
     font-weight: 700;
   }
   
+  .section-seven .seven-container .profile-card .card__title{
+    font-size: 15px;
+  }
   
   .card__description {
     margin: 10px 0 0;
@@ -922,8 +930,16 @@ margin-left: 5%;
 
 
 
+.section-seven  .seven-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 50vh;
+}
 
-
+.section-seven .seven-container .profile-card{
+  margin: 20px;
+}
 
 
       /* ====== css for footer ======== */
