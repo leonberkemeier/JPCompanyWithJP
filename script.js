@@ -97,16 +97,13 @@ p3.addEventListener("click", () =>{
 });
 
 
-const q1 = document.getElementById("question1");
+const heart = document.getElementById("heart");
+const match = document.getElementById("match");
 
-const a1 = document.getElementById("answer1");
-
-q1.addEventListener("click", () =>{
-  a1.classList.toggle("show-answer");
+heart.addEventListener("click", () =>{
+  match.classList.add("itsamatch");
 });
-
-
-
+// alert('hi')
 var coll = document.getElementsByClassName("collapsible");
 let list = document.querySelectorAll("collapsible")
     var i;

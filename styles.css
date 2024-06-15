@@ -424,7 +424,7 @@ margin-left: 5%;
     font-size: 15px;
 }
 .section-second{
-  height: 105vh;
+  height: 110vh;
   display: right ;
   justify-content: center;
   flex-direction: column;
@@ -432,7 +432,7 @@ margin-left: 5%;
 .section-second .banner{
   z-index: -1;
   margin-left: 5vw;
-  height: 100vh;
+  height: 110vh;
   width: 90vw;
   
   position: absolute;
@@ -599,7 +599,7 @@ margin-left: 5%;
 
 .pillars .pillar img{
   margin: 30px;
-  height: 450px;
+  height: 380px;
   cursor: pointer;
   filter: brightness(70%);
 }
@@ -688,62 +688,225 @@ margin-left: 5%;
   }
 
   .section-fourth .columns .col0{
+    background-color: rgb(84, 82, 82);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-fourth .columns .col0 .bgimg{
     background: url('labstuff.jpg');
     background-size: cover;
     background-position: center;
+    background-color: orange;
+    height: 90%;
+    border-radius: 10px;
+    width: 90%;
   }
-
   .section-fourth .columns .col1{
     
-    color: rgb(235, 221, 221);
+    color: rgb(48, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  .section-fourth .columns .col1 .matchmaker{
+    height: 90%;
+    width: 90%;
+    background-color: rgb(195, 142, 95);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
 
-  .section-fourth .columns .col1 h1{
-    margin: 20px;
-    margin-bottom: 40px;
-    margin-top: 80px;
-    font-size: 25px;
-  }
-  .section-fourth .columns .col1 h3{
-    margin: 20px;
-    padding: 20px;
-    text-align: justify;
-    text-justify: inter-word;
-    width: 70%;
-    margin-left: 15%;
-    font-size: 17px;
-  }
-
-  .section-fourth .columns1 .col1{
-    background-color: white;
-  }
-  .section-fourth .columns1 .col0{
-    background-color: rgb(255, 218, 185);
-    color: var(--modal-color);
+  .matchmaker .header{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 5%;
+    justify-content: space-evenly;
     
   }
 
-  .section-fourth .columns1 .col0 h1{
-    margin: 20px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    font-size: 25px;
+  .matchmaker .header h1{
+    font-size: 20px;
   }
 
-  .section-fourth .columns1 .col0 h3{
-    margin: 20px;
-    padding: 20px;
-    text-align: justify;
-    text-justify: inter-word;
-    width: 70%;
-    margin-left: 15%;
-    font-size: 17px;
+  .matchmaker .header h2{
+    font-size: 15px;
   }
 
+  .matchmaker .body{
+    height: 450px;
+    /* background-color: orange; */
+    /* opacity: .7; */
+    background: url('BASFBG.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 450px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .matchmaker .body .match{
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    background-color:  rgb(0, 0, 0,.8);
+    /* opacity: .7 ; */
+    border-radius: 5px;
+  }
+  .match{
+    transform: translateY(-80px);
+    
+    opacity: 0;
+    transition: all 1s;
+    /* z-index: -10; */
+  }
+  .itsamatch{
+    opacity: 1;
+    transform: translateY(0px);
+    
+    /* z-index: ; */
+  }
+  .match .match-head{
+    background-color: rgba(81, 162, 51, 0.81);
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .match .match-head h1{
+    font-size: 40px;
+    color: white;
+  }
+  .match .match-head h2{
+    font-size: 15px;
+    color: white;
+  }
 
+  .match .match-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 50%;
+  }
+  .match .match-body .me{
+    height: 150px;
+    width: 150px;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 20px;
+    font-size: 50px;
+    color:black;
+    background-color: white;
+  }
+  .match .match-body .company{
+    margin: 20px;
+    height: 150px;
+    width:150px;
+    background: url('BASFBGcropped.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  
+  .match .match-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    color: white;
+    /* background: orange; */
+  }
+  .match .match-footer button{
+    background-color: var(--green-color); /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .match .match-footer h3{
+    font-size: 15px;
+  }
+  .matchmaker .body ul{
+    width: 55%; 
+    background-color: green;
+    height: 60%;
+    background: rgba(131, 129, 129, 0.7);
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    /* backdrop-filter: blur(5px); */
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin-left: 10px; */
+    list-style-type: circle;
+    align-items: center;
+    margin-top: 50px;
+  }
 
+  .matchmaker .body ul li{
+    margin: 10px;
+    margin-left: 30px;
+    justify-content: space-evenly;
+    align-items: left;
+  }
+  .matchmaker .footer{
+    height: 10%;
+    width: 80%;
+    display: flex;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
+  }
+
+  .matchmaker .footer button{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+    border: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    opacity: .7;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .matchmaker .footer button:hover{
+    cursor: pointer;
+  }
+  .matchmaker .footer .heart{
+    background-color: green;
+  }
   .profile-card {
     position: relative;
     width: 200px;
@@ -796,6 +959,18 @@ margin-left: 5%;
     font-weight: 700;
   }
   
+  .section-seven{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .section-seven .seven-container{
+    width: 90%;
+    background: rgb(84, 82, 82);
+    border-radius: 5px;
+  }
+
   .section-seven .seven-container .profile-card .card__title{
     font-size: 15px;
   }
